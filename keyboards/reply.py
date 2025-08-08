@@ -7,7 +7,6 @@ def rkb(text: str) -> KeyboardButton:
 def rkb_row(*buttons: KeyboardButton) -> list[KeyboardButton]:
     return list(buttons)
 
-
 # --- Главное меню ---
 menu_buttons = ReplyKeyboardMarkup(
     keyboard=[
