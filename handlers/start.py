@@ -5,7 +5,6 @@ from keyboards.inline import start_button_keyboard
 from keyboards.reply import menu_buttons
 
 router=Router()
-
 @router.message(lambda message: message.text and message.text.lower() in ["/start", "🔁 пройти опрос заново","📝 пройти опрос"])
 async def start_bot(message:Message):
     name=message.from_user.first_name
