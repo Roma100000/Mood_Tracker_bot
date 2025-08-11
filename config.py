@@ -1,2 +1,2 @@
 import os
-TOKEN = os.getenv("TOKEN")
+print("TOKEN is:", os.getenv("TOKEN"))
