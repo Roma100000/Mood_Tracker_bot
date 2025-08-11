@@ -1,12 +1,17 @@
 import asyncio
+import os
 import logging
 from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
-from config import TOKEN
 from handlers import start_router, track_router, history_router
+
+TOKEN = os.getenv("TOKEN")
+if not TOKEN:
+    raise Exception("TOKEN не найден в переменных окружения!")
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
