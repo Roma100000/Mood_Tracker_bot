@@ -8,5 +8,4 @@ build:
   requirementsPath: requirements.txt
 run:
   scriptName: bot.py
-  persistenceMount: /data
   containerPort: 80
