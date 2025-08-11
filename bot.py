@@ -8,6 +8,7 @@ from aiogram.enums import ParseMode
 
 from handlers import start_router, track_router, history_router
 
+print("=== BOT.PY ЗАПУЩЕН ===")
 TOKEN = os.getenv("TOKEN")
 if not TOKEN:
     raise Exception("TOKEN не найден в переменных окружения!")
